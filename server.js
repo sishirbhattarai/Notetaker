@@ -36,17 +36,18 @@ app.get("*", function(req, res) {
 });
 
 app.post("/api/notes", function(req, res) {
-	var savedNotes = JSON.parse(fs.readFileSync("./db/db.JSON", "utf8"));
+	var savedNotes = JSON.parse(fs.readFileSync("db/db.JSON", "utf8"));
 	var newNote = req.body;
 	savedNotes.push(newNote);
 
-	fs.writeFileSync("./db/db.JSON", JSON.stringify(savedNotes));
-	console.log("Your notes is now saved", newNote);
+	// fs.writeFileSync("./db/db.JSON", JSON.stringify(savedNotes));
+	// console.log("Your notes is now saved", newNote);
 	res.json(savedNotes);
 });
 
 app.delete("/api/notes/:id", function(req, res) {
 	var savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+	//splicing the array by 1. 
 	savedNotes.splice(req.params.id, 1);
     
     fs.writeFileSync("./db/db.json", JSON.stringify(savedNotes));
