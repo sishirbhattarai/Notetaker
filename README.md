@@ -14,7 +14,7 @@ https://github.com/sishirbhattarai/Note-taker-app
 
 ## Heroku Deployed Link
 
-https://notetakersishirapp.herokuapp.com/
+https://powerful-mountain-76190.herokuapp.com/notes
 
 ## Technology Used:
 HTML, CSS, JS, npm, node
