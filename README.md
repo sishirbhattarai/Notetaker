@@ -10,7 +10,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## GitHub Link
 
-https://github.com/sishirbhattarai/Note-taker-app
+https://github.com/sishirbhattarai/Notetaker
 
 ## Heroku Deployed Link
 
