@@ -40,8 +40,8 @@ app.post("/api/notes", function(req, res) {
 	var newNote = req.body;
 	savedNotes.push(newNote);
 
-	// fs.writeFileSync("./db/db.JSON", JSON.stringify(savedNotes));
-	// console.log("Your notes is now saved", newNote);
+	fs.writeFileSync("db/db.JSON", JSON.stringify(savedNotes));
+	console.log("Your notes is now saved", newNote);
 	res.json(savedNotes);
 });
 
